@@ -1,0 +1,13 @@
+<h1>this is the show page</h1>
+<br>
+these are all of my ducks: <br>
+
+<ol>    
+    <% @student.ducks.each do |ducks|%>
+        <%=  ducks.name%><br>
+        <%end%>
+</ol>
+
+<br>
+<%= link_to "back to the home page!", students_path%><br><br>
+<%= link_to "edit this profile", edit_student_path%>
